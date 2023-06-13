@@ -1,0 +1,82 @@
+$font:'Courier New', Courier, monospace;
+$color:rgb(201, 255, 6);
+$color2:white;
+$bcolor:rgb(103, 101, 101);
+$size:25px;
+$fullsize:100%;
+$fullheight:100vh;
+$fav:relative;
+$ct:center;
+@mixin width($value){
+    width:value;
+}
+@mixin height($value)
+{
+    height:$value;
+}
+@media screen and (max-width:676px) {
+
+.homeContainer{
+position:relative;
+width:$fullsize;
+height:100vh;
+
+img{
+    width:100%;
+    height:100Vh;
+}
+.ourcarinfo
+{
+    position:$fav;
+    width:100%;
+    text-align:$ct;
+   width:100%;
+   height:100vh; 
+   
+h2{
+        position:$fav;
+        color:$color2;
+        top:-50%;
+        font-family: $font;
+    }
+    p{
+        position:$fav;
+        color:$color2;
+        top:-50%;
+        font-size:$size;
+        font-family: $font;
+    }
+}
+}
+.modelsContainer
+{
+    position:absolute;
+    margin-top:-4%;
+    text-align: $ct;
+    height:auto;
+    width:100%;
+    background:rgb(228, 226, 226);
+    h3{
+        position: relative;
+       top:30px;
+    }
+    .modelsInfo
+    {
+        position:$fav;
+        width:80%;
+        left:10%;
+     
+        border-radius: 10px;
+        .card{
+            width:100%;
+            background: rgb(110, 110, 110);
+            margin-top:70px;
+            border-radius: 20px;
+            p{
+                color:white
+            }
+        }
+    }
+}
+
+}
