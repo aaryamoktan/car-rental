@@ -14,6 +14,7 @@ $ct:center;
 {
     height:$value;
 }
+
 @media screen and (max-width:676px) {
 
 .homeContainer{
@@ -83,7 +84,7 @@ h2{
         position:$fav;
         width:80%;
         left:10%;
-     
+         
         border-radius: 10px;
         .card{
             width:100%;
@@ -127,8 +128,101 @@ font-family: 'Courier New', Courier, monospace;
 .display-card img{
 position:relative;
 width:80%;
-
 height:40vh;
 left:10%;
 };
+}
+@media screen and (min-width:1024px) {
+    .homeContainer
+    {
+        width:100%;
+        height:100%;
+        .homeOurinfo
+        {
+            position:relative;
+            width:100%;
+            height:90vh;
+            img{
+                position:relative;
+                width:100%;
+                height:100%;
+            }
+            .ourcarinfo
+            {
+                position:relative;
+                top:-50%;
+                width:100%;
+                height:100%;
+                text-align: center;
+                color:white;
+                h2{
+                    position:$fav;
+                    font-size: 60px;
+                   font-family: 'Courier New', Courier, monospace;
+                }
+                p {
+                    position:$fav;
+                    font-size: 40px;
+                    font-family: 'Courier New', Courier, monospace;
+                };
+            }
+        }
+        
+    }
+.modelsContainer
+{ 
+    width:100%;
+    height:auto;
+    background:rgb(205, 204, 204);
+    text-align: center;
+    h3{
+        position:$fav;
+        width:20%;
+        left:39%;
+        top:6px;
+        color:white;
+        background:rgb(138, 138, 138);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .modelsInfo
+    {
+        position:$fav;
+        width:100%;
+        margin-top:100px;
+        display:block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .card{
+            position:$fav;
+            background:rgb(92, 91, 91);
+            width: 45%;
+            left:27%;
+            margin-top:90%;
+            height:auto;
+            border:none;
+            box-shadow: 1px 1px 20px black;
+            margin-top:40px;
+            border-radius: 20px;
+            bottom: 20px;;
+            p{
+                color:white;
+                text-transform: uppercase;
+                font-size: 30px;
+            };
+            .para{
+                font-size:20px;
+            }
+            button{
+                border-radius: 10px;
+                width:15%;
+                background:transparent;
+                border:1px solid rgb(79, 78, 78);
+                box-shadow: 1px 1px 20px black;
+                color:white;
+            }
+           
+        }
+    }
+}
 }

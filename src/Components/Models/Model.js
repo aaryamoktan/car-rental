@@ -16,7 +16,7 @@ const Model = () => {
               <div className='card'>
                 <p>{models}</p>
                 <img src={image} alt="my image" />
-               <p> <Link to={`/CarD/${models}`} ><button >Explore</button></Link></p>
+               <p className='para'> <Link to={`/CarD/${models}`} ><button >Explore</button></Link></p>
               </div>
             </>
           )
