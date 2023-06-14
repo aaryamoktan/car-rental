@@ -8,32 +8,32 @@ export const Cars = [
         models:"BMW",
         price:100,
         image:bmw,
-        link:""
+        models:"bmw"
     },
     {
         models:"MERCIDIES",
         price:150,
         image:mer,
-        link:"",
+        models:"mer",
     },
     ,
     {
         models:"MUSTANG",
         price:200,
         image:mus,
-        link:"",
+    models:"mus",
     },
     ,
     {
         models:"BUGATI",
         price:500,
         image:bugati,
-        link:""
+        models:"bugati"
     }
     ,{
         models:"AUDI",  
         price:160,
         image:audi,
-        link:""
+        models:"audi"
     },
 ]

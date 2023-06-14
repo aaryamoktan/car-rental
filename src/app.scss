@@ -93,8 +93,42 @@ h2{
             p{
                 color:white
             }
+            button{
+                background:transparent;
+                border-radius: 10px;;
+                box-shadow: 0.2px 0.2px 20px black;
+                border:1px solid white;
+            }
         }
     }
 }
+.display_container
+{
+    position:relative;
+    top:-10%;
+    width:100%;
+    height:auto;
+}
+.display-card
+{
+   position:absolute;
+    width:100%;
+    height:auto;
+    background:rgb(99, 98, 98)
+}
+.display-card p{
 
+color:white;
+text-align:center;
+margin-top:15%;
+font-size: 25px;
+font-family: 'Courier New', Courier, monospace;
+};
+.display-card img{
+position:relative;
+width:80%;
+
+height:40vh;
+left:10%;
+};
 }
