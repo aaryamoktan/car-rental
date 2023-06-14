@@ -1,6 +1,6 @@
 import React from 'react'
-import { Cars } from './Cars'
-const Models = () => {
+import { Cars } from './Cars/Cars';
+const Model = () => {
   return (
     <><div className='modelsContainer'>
     <h3>Cars Models</h3>
@@ -23,4 +23,4 @@ const Models = () => {
   )
 }
 
-export default Models
+export default Model

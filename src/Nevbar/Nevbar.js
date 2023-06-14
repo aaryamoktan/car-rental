@@ -10,11 +10,11 @@ const Nevbar = () => {
   </button>
   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className="navbar-nav">
-      <a className="nav-item " href='/' >Home <span class="sr-only"></span></a>
-      <a className="nav-item " href="/models">Models</a>
-      <a className="nav-item " href="/pricing">Pricing</a>
-      <a className="nav-item  " href="/contact">Contact</a>
-      <a className="nav-item  " href="/service">Service</a>
+      <Link className="nav-item " to='/' >Home <span class="sr-only"></span></Link>
+      <Link className="nav-item " to="/models">Models</Link>
+      <Link className="nav-item " to="/pricing">Pricing</Link>
+      <Link className="nav-item  " to="/contact">Contact</Link>
+      <Link className="nav-item  " to="/service">Service</Link>
     </div>
   </div>
 </nav>

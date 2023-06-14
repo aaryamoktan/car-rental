@@ -1,5 +1,5 @@
 import React from 'react'
-import Models from '../Models/Models'
+import Model from '../Models/Model'
 import Pricing from '../Pricing/Pricing'
 import Service from '../Services/Service'
 import Contact from '../Contack/Contact'
@@ -22,7 +22,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <Models/>
+    <Model/>
     <Pricing/>
     <Service/>
     <Contact/>

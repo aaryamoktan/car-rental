@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import "./app.scss"
 import Home from './Components/Home/Home';
-import Models from './Components/Models/Models';
+import Model from './Components/Models/Model';
 import Pricing from './Components/Pricing/Pricing';
 import Contact from './Components/Contack/Contact';
 import Service from './Components/Services/Service';
@@ -20,7 +20,7 @@ function App() {
 
   <Routes>
     <Route path="/" element={<Home/>}/>
-    <Route path="/models" element={<Models/>}/>
+    <Route path="/models" element={<Model/>}/>
     <Route path="/pricing" element={<Pricing/>}/>
     <Route path="/contact" element={<Contact/>}/>
     <Route path="/service" element={<Service/>}/>
