@@ -15,7 +15,6 @@ const Home = () => {
       </div>
     </div>
     <Model/>
-    <Pricing/>
     <Service/>
     <Contact/>
    

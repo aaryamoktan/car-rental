@@ -2,11 +2,7 @@ import React, { useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom';
 import { Audi } from './audi';
 const CarDisplay = ({ Match }) => {
-
-    const params = useParams()
-
-    const Location = useLocation();
-
+    const params = useParams();
     const filter = Audi.filter((ele) => {
         return ele.models == params.name;
     })
@@ -21,9 +17,9 @@ const CarDisplay = ({ Match }) => {
                         car.map((e) => {
                             const { name, image, price } = e;
                             return (
-                                <> <p className='title'>{name}</p>
+                                <> <div className='dcard'><p className='title'>{name}</p>
                                     <img src={image} alt="myimage" />
-                                    <p className='price'>{price}</p></>
+                                    <p className='price'>{price}</p></div></>
 
                             )
                         })

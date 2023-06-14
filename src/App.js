@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import "./app.scss"
+import Footer from './Components/footer/Footer';
 import Home from './Components/Home/Home';
 import Model from './Components/Models/Model';
 import Pricing from './Components/Pricing/Pricing';
@@ -25,6 +26,7 @@ function App() {
     <Route path="/contact" element={<Contact/>}/>
     <Route path="/service" element={<Service/>}/>
   </Routes>
+  <Footer/>
 </BrowserRouter>
 
     </>

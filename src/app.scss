@@ -131,6 +131,51 @@ width:80%;
 height:40vh;
 left:10%;
 };
+.selection
+{
+    position:absolute;
+    width:100%;
+    height: auto;
+    top:9%;
+    background-color: rgb(92, 91, 91);
+    .input{
+           position:relative;
+           width:30%;
+           height:8vh;
+           margin-top:1%;
+           left:35%;color:white;
+           font-size: 25px;
+           text-align: center;
+        }
+        .selection_container
+    {
+        position:relative;
+        width:100%;
+        height:auto;
+        display:block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .selection_card
+        {
+            position:relative;
+            width:60%;
+            height:40vh;
+            margin-top:160px;
+            left:20%;
+            background:rgb(45, 45, 45);
+            color:white;
+            text-align: center;
+            box-shadow: 1px 1px 20px black;
+            img{
+                position:relative;
+                width:100%;
+                height:79%;
+            }
+        }
+    }
+}
+
 }
 @media screen and (min-width:1024px) {
     .homeContainer
@@ -225,4 +270,77 @@ left:10%;
         }
     }
 }
+.selection
+{
+    position:absolute;
+    width:100%;
+    height: auto;
+    top:9%;
+    background-color: rgb(92, 91, 91);
+    .input{
+           position:fixed;
+           width:30%;
+           height:8vh;
+           margin-top:1%;
+           left:35%;color:white;
+           font-size: 25px;
+           z-index: 1;
+           text-align: center;
+        }
+        .selection_container
+    {
+        position:relative;
+        width:100%;
+        height:auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        .selection_card
+        {
+            position:relative;
+            width:30%;
+            height:40vh;
+            margin-top:160px;
+            margin-left:50px;
+            background:rgb(45, 45, 45);
+            color:white;
+            text-align: center;
+            box-shadow: 1px 1px 20px black;
+            img{
+                position:relative;
+                width:100%;
+                height:79%;
+            }
+        }
+    }
+}
+.display_container
+{
+    width:100%;
+    height:auto;
+    background:rgb(163, 162, 162);
+    .display-card
+    {
+        position:relative;
+        width:100%;
+        color:white;
+        text-align: center;
+        height:auto;
+        .dcard{
+            position:relative;
+            width:50%;
+            height:60vh;
+            left:25%;
+            background:rgb(67, 67, 67);
+            img{
+                position:relative;
+                width:100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
 }
