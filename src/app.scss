@@ -17,6 +17,105 @@ $ct:center;
 
 @media screen and (max-width:676px) {
 
+.service_container
+{
+    position:absolute;
+    width:100%;
+    height:auto;
+    top:10%;
+    background: rgb(85, 84, 84);
+    .service_inner
+    {
+        position:relative;
+        width:100%;
+        height:auto;
+        text-align: center;
+        h1{
+            position: relative;
+            color:white;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top:4%
+        }
+        .serviceno1
+        {
+            position:relative;
+            width:100%;
+            height:auto;
+            .no1img
+            {
+                position:relative;
+                width:100%;
+                height:40vh;
+                img{
+                    position:relative;
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .mo1info
+            {
+                position: relative;
+                width: 100%;
+                height:auto;
+                margin-top:5%;
+                color:white;
+                font-size: 18px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+        .service2
+        {
+            position:relative;
+            width:100%;
+            height:auto;
+            .service2info{
+                position: relative;
+                width:100%;
+                height:auto;
+                text-align: center;
+                h3{
+                    position:relative;
+                    margin-top:10%;
+                    color:white;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 30px;;
+                }
+                .brand
+                {
+                    position:relative;
+                    width:100%;
+                    height:auto;
+                    margin-top:10%;
+                    .brand1
+                    {
+                        position:relative;
+                        width:100%;
+                        height:auto;
+                        .barndinfo
+                        {
+                            position:relative;
+                            height:auto;
+                            width:90%;
+                            left:5%;
+                            color:white
+                        }
+                        .brandlogo{
+                            position:relative;
+                            width: 100%;
+                            height:40vh;
+                            img{
+                                position: relative;
+                                width: 100%;
+                                height:100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .homeContainer{
 position:relative;
 width:$fullsize;
@@ -174,6 +273,7 @@ left:10%;
             }
         }
     }
+    
 }
 
 }
@@ -425,7 +525,7 @@ left:10%;
         {
             position:relative;
             width:100%;
-            height:60vh;
+            height:auto;
             margin-top:5%;
             text-align: center;
             .service2info
@@ -460,8 +560,36 @@ left:10%;
                     position:relative;
                     width:80%;
                     left:10%;
-                    
-                    height:45vh;
+                    height:35vh;
+                    margin-top:4%;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    .barndinfo
+                    {
+                        position:relative;
+                        width:40%;
+                        height:100%;
+                        animation-name: upper;
+                        margin-top: 5%;;
+                    animation-duration: 3s;
+                    animation-iteration-count: 1;
+                    }
+                    .brandlogo
+                    {
+                        position:relative;
+                        width:40%;
+                        height:100%;
+                        bottom: 0%;
+                       
+                        img{
+                            position:relative;
+                            width:90%;
+                            height:85%;
+                            
+                        }
+                    }
                     
                 }
               }

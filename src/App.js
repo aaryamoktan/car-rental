@@ -17,6 +17,7 @@ import {
 function App() {
   return (
     <><BrowserRouter>
+    <div className='home'>
 <Nevbar/>
   <Routes>
     <Route path="/" element={<Home props/>}/>
@@ -25,8 +26,7 @@ function App() {
     <Route path="/pricing" element={<Pricing/>}/>
     <Route path="/contact" element={<Contact/>}/>
     <Route path="/service" element={<Service/>}/>
-  </Routes>
-  <Footer/>
+  </Routes></div>
 </BrowserRouter>
 
     </>
