@@ -344,5 +344,131 @@ left:10%;
         }
     }
 }
+.service_container
+{
+    position:relative;
+    width:100%;
+    height:auto;
+    background:rgb(209, 207, 207);
+    .service_inner
+    {
+        position:relative;
+        width:100%;
+        height:auto;
+        background:rgb(209, 207, 207);
+        top:9.4%;
+        
+        h1{
+            color:rgb(255, 255, 255);
+            font-family: $fav;
+            position:relative;
+            text-align: center;
+            top:1%;
+        }
+        .serviceno1
+        {
+            position:relative;
+            width:100%;
+            height:60vh;
+            background:rgb(205, 204, 204);
+            display:flex;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            .no1img
+            {
+                position:relative;
+                width:60%;
+                height:100%;margin-top:5%;
+                img{
+                    position:relative;
+                    height:90%;
+                    width:100%;
+                };
+            }
+            .mo1info
+            {
+                position:relative;
+                width:40%;
+                height:100%;
+                color:rgb(79, 77, 77);
+                font-family: 'Courier New', Courier, monospace;
+                .rentalcar
+                {
+                    position:relative;
+                    margin-top:-0%;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 30px;
+                    animation-name: upper;
+                    animation-duration: 5s;
+                    animation-iteration-count: 1;
+                    
+                    i{
+                        color:rgb(247, 8, 8);
+                        font-size: 35px;
+                    }
+                } 
+                @keyframes upper {
+                    0%
+                    {
+                        top:98%;
+                    }
+                    100%
+                    {
+                        top:0%
+                    }
+                }          
 
+            }
+        }
+        .service2
+        {
+            position:relative;
+            width:100%;
+            height:60vh;
+            margin-top:5%;
+            text-align: center;
+            .service2info
+            {
+                position:relative;
+               color:rgb(116, 114, 114);
+               font-family: 'Courier New', Courier, monospace;
+                height:auto;
+              h3{
+                position:relative;
+                font-size: 45px;
+                     animation-name: upper1;
+                    animation-duration: 5s;
+                    animation-iteration-count: 1;
+              }
+              @keyframes upper1 {
+                0%{
+                   opacity: 0;
+                }
+                100%{
+                    opacity: 2;
+                }
+                
+              }
+              .brand
+              {
+                position:relative;
+                width:100%;
+                height:auto;
+                .brand1
+                {
+                    position:relative;
+                    width:80%;
+                    left:10%;
+                    
+                    height:45vh;
+                    
+                }
+              }
+                
+            }
+            
+        }
+    }
+}
 }
