@@ -20,7 +20,7 @@ const CarDisplay = ({ Match }) => {
                                 <>
                                 <div className='inner-card'><div className='dcard'><p className='title'>{name}</p>
                                     <img src={image} alt="myimage" />
-                                    <p className='price'>{price}/day</p></div> </div></>
+                                    <p className='price'>${price}/day</p></div> </div></>
 
                             )
                         })
