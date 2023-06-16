@@ -53,9 +53,7 @@ $ct:center;
         button{
             position:relative;
             margin-bottom: 20px;
-            
             width: 25%;
-            
             border:none;
             background:transparent;
             color:white;
@@ -256,31 +254,58 @@ h2{
 .display_container
 {
     position:relative;
-    top:-10%;
     width:100%;
     height:auto;
-}
+
 .display-card
 {
    position:absolute;
     width:100%;
     height:auto;
-    background:rgb(99, 98, 98)
+    top:10%;
+    background: rgb(171, 171, 171);
+    .inner-card
+    {
+        position:relative;top:50px;
+        width:80%;
+        left:10%;
+        height:50vh;
+        background:rgb(63, 63, 63);
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px black;
+         p{
+            position:relative;
+            
+            color:white;
+            text-align:center;
+            margin-top:15%;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            };
+            .price
+            {
+                position:relative;
+                top:-40px;
+            }
+             img{
+                position:relative;
+                width:80%;
+                height:30vh;
+                top:10px;
+                left:10%;
+                }
+        
+    }
+    
 }
-.display-card p{
 
-color:white;
-text-align:center;
-margin-top:15%;
-font-size: 25px;
-font-family: 'Courier New', Courier, monospace;
-};
 .display-card img{
 position:relative;
 width:80%;
 height:40vh;
 left:10%;
-};
+}
+}
 .selection
 {
     position:absolute;
@@ -472,30 +497,50 @@ left:10%;
 }
 .display_container
 {
+    position:relative;
     width:100%;
     height:auto;
-    background:rgb(163, 162, 162);
-    .display-card
+
+.display-card
+{
+   position:absolute;
+    width:100%;
+    height:auto;
+    top:10%;
+    background: rgb(171, 171, 171);
+    .inner-card
     {
-        position:relative;
-        width:100%;
-        color:white;
-        text-align: center;
-        
-        height:auto;
-        .dcard{
+        position:relative;top:50px;
+        width:40%;
+        left:30%;
+        height:50vh;
+        background:rgb(63, 63, 63);
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px black;
+         p{
             position:relative;
-            width:50%;
-            height:60vh;
-            left:25%;
-            background:rgb(67, 67, 67);
-            img{
+            
+            color:white;
+            text-align:center;
+            margin-top:15%;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            };
+            .price
+            {
                 position:relative;
-                width:100%;
-                height: 100%;
+                top:-40px;
             }
-        }
+             img{
+                position:relative;
+                width:80%;
+                height:30vh;
+                top:10px;
+                left:10%;
+                }
+            }
     }
+    
 }
 .service_container
 {
