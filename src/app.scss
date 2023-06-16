@@ -21,6 +21,7 @@ $ct:center;
     width: 100%;
     height:100vh;
     background:rgb(207, 206, 206);
+    
     .contactForm
     {
         position:relative;
@@ -40,6 +41,10 @@ $ct:center;
             color:white;
             font-family: 'Courier New', Courier, monospace;
             font-size: 20px;
+        }
+        p{
+            color:red;
+            font-family: 'Courier New', Courier, monospace;
         }
         input{
             position:relative;
@@ -675,6 +680,10 @@ left:10%;
         input{
             position:relative;
             width: 80%;
+        }
+        p{
+            color:red;
+            font-family: 'Courier New', Courier, monospace;
         }
         button{
             position:relative;
