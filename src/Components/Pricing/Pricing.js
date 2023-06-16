@@ -29,7 +29,7 @@ const Pricing = () => {
           return(
             <>
             <div className='selection_card'>
-            <p>
+            <p className='namep'>
             {name}</p>
             
             <img src={image}/>
