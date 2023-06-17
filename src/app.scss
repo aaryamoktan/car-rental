@@ -838,13 +838,13 @@ left:10%;
     width:100%;
     height: 100vh;
     background:rgb(157, 156, 156);
+    overflow: hidden;
     .Bookform
     {
         position: relative;
         width:100%;
-        height:100vh;
+        height:95vh;
         background:rgb(157, 156, 156);
-        margin-bottom: 20px;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -852,9 +852,9 @@ left:10%;
         .Book_Carinfo
         {
            position: relative;
-            top:190px;
+            top:250px;
             width:40%;
-            margin-bottom: 200px;
+            margin-bottom: 250px;
             height:80vh;
             background:transparent;
             border-radius: 30px;
@@ -874,7 +874,7 @@ left:10%;
         .Booking_details
         {
             position: relative;
-            top:120px;
+            top:180px;
             width:45%;
             text-align: center;
             height:70vh;
