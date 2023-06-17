@@ -9,6 +9,7 @@ import Contact from './Components/Contack/Contact';
 import Service from './Components/Services/Service';
 import Nevbar from './Nevbar/Nevbar';
 import CarDisplay from './Components/Models/Cars/CarDisplay';
+import Book from './Components/Models/Cars/Book';
 import {
   BrowserRouter,
   Route,
@@ -22,10 +23,11 @@ function App() {
   <Routes>
     <Route path="/" element={<Home props/>}/>
     <Route path="/models" element={<Model/>}/>
-    <Route path="/CarD/:name"element={<CarDisplay/>}/>
+    <Route path="/CarD/:name" element={<CarDisplay/>}/>
     <Route path="/pricing" element={<Pricing/>}/>
     <Route path="/contact" element={<Contact/>}/>
     <Route path="/service" element={<Service/>}/>
+    <Route path="/book/:id" element={<Book/>}/>
   </Routes></div>
 </BrowserRouter>
 

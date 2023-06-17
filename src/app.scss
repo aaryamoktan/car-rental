@@ -16,6 +16,79 @@ $ct:center;
 }
 
 @media screen and (max-width:676px) {
+    .BookContainer
+    {
+        width:100%;
+        height: 100vh;
+        background:rgb(157, 156, 156);
+        .Bookform
+        {
+            position: relative;
+            width:100%;
+            height:auto;
+            background:rgb(157, 156, 156);
+            margin-bottom: 200px;
+            
+            .Book_Carinfo
+            {
+               position: relative;
+                top:160px;
+                width:100%;
+                left:0%;
+                margin-bottom: 200px;
+                height:60vh;
+                background:transparent;
+                border-radius: 30px;
+                text-align: center;font-family: 'Courier New', Courier, monospace;
+                color:white;
+                img{
+                    position:relative;
+                    width:95%;
+                }
+                p{
+                    position:relative;
+                    font-size: 25px;
+                }
+                
+            }
+            .Booking_details
+            {
+                position: relative;
+                top:100px;
+                width:100%;
+                text-align: center;
+                height:70vh;
+                margin-bottom: 100px;
+                background-color:  rgb(157, 156, 156);
+                input{
+                    position:relative;
+                    text-align: center;
+                    width: 60%;
+                }
+                button{
+                    width:20%;
+                    background:transparent;
+                    border:none;
+                    color:white;
+                    font-family: 25px;
+                    box-shadow: 1px 1px 20px black;
+                    border-radius: 20px;
+                    font-family:'Courier New', Courier, monospace ;
+                }
+                label{
+                    position:relative;
+                    font-family: 'Courier New', Courier, monospace;
+                    color:white;
+                    font-size: 20px;
+                    
+                }
+                p{
+                    color:white;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
     .contactContainer
 {
     width: 100%;
@@ -757,6 +830,82 @@ left:10%;
             font-family: 'Courier New', Courier, monospace;
             box-shadow: 1px 1px 10px black;
             border-radius: 10px;
+        }
+    }
+}
+.BookContainer
+{
+    width:100%;
+    height: 100vh;
+    background:rgb(157, 156, 156);
+    .Bookform
+    {
+        position: relative;
+        width:100%;
+        height:100vh;
+        background:rgb(157, 156, 156);
+        margin-bottom: 20px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        .Book_Carinfo
+        {
+           position: relative;
+            top:190px;
+            width:40%;
+            margin-bottom: 200px;
+            height:80vh;
+            background:transparent;
+            border-radius: 30px;
+            text-align: center;font-family: 'Courier New', Courier, monospace;
+            color:white;
+            img{
+                position:relative;
+                width:95%;
+                left:0%;
+            }
+            p{
+                position:relative;
+                font-size: 25px;
+            }
+            
+        }
+        .Booking_details
+        {
+            position: relative;
+            top:120px;
+            width:45%;
+            text-align: center;
+            height:70vh;
+            margin-bottom: 100px;
+            background-color:  rgb(157, 156, 156);
+            input{
+                position:relative;
+                text-align: center;
+                width: 60%;
+            }
+            button{
+                width:20%;
+                background:transparent;
+                border:none;
+                color:white;
+                font-family: 25px;
+                box-shadow: 1px 1px 20px black;
+                border-radius: 20px;
+                font-family:'Courier New', Courier, monospace ;
+            }
+            label{
+                position:relative;
+                font-family: 'Courier New', Courier, monospace;
+                color:white;
+                font-size: 20px;
+                
+            }
+            p{
+                color:white;
+                font-size: 25px;
+            }
         }
     }
 }
