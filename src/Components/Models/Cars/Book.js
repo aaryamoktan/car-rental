@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Audi } from './audi';
-import { FALSE } from 'sass';
+import { useNavigate } from 'react-router-dom';
 const Book = () => {
+  const Navigation = useNavigate()
   const params = useParams();
 
   const filter = Audi.filter((ele)=>
@@ -78,7 +79,11 @@ console.log(book)
               )
             })}
                 
-                <button type='submit'  >Submit</button>
+                <button type='submit' onClick={(e)=>
+                {
+                  alert(" sucessfully booked")
+                  Navigation("/")
+                }} >Submit</button>
             </form>
         </div>
     </div>
