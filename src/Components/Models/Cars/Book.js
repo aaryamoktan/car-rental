@@ -23,12 +23,12 @@ const sendemail = (e)=>
 e.preventDefault()
 alert("sucsufully booked")
 Navigation("/");
-emailjs.sendForm('2818303M4', 'template_pmg6ris', e.target, '8ONo3BowBtapairW8')
-.then((result) => {
-    console.log(result.text);
-}, (error) => {
-    console.log(error.text);
-});
+
+emailjs.sendForm('2818303M4', 'template_lo1seq9', e.target, '8ONo3BowBtapairW8')
+
+emailjs.sendForm('2818303M4', 'template_sdz7fx3', e.target, '8ONo3BowBtapairW8')
+
+
 }
   return (
     <div className='BookContainer'>
