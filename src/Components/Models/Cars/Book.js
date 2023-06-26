@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import emailjs from '@emailjs/browser';
 import { useParams } from 'react-router-dom'
 import { Audi } from './audi';
 import { useNavigate } from 'react-router-dom';
@@ -17,8 +18,18 @@ const [change,setchange] = useState()
 const [date,setdate]=useState();
 const [name,Setname] = useState();
 const [id,setid] = useState();
-
-console.log(book)
+const sendemail = (e)=>
+{
+e.preventDefault()
+alert("sucsufully booked")
+Navigation("/");
+emailjs.sendForm('2818303M4', 'template_pmg6ris', e.target, '8ONo3BowBtapairW8')
+.then((result) => {
+    console.log(result.text);
+}, (error) => {
+    console.log(error.text);
+});
+}
   return (
     <div className='BookContainer'>
     <div className='Bookform'>
@@ -38,31 +49,31 @@ console.log(book)
 
         </div>
         <div className='Booking_details'>
-            <form>
+            <form onSubmit={sendemail}>
             <label>Your-Name</label>
             <br/>
-                <input type='text' placeholder="" onChange={(e)=>
+                <input type='text' name="name" placeholder="" onChange={(e)=>
                 {
                   Setname(e.target.value)
                 }} required/>
                 <br/>
-                <label>Id-Number</label>
+                <label>Email</label>
             <br/>
-                <input type='text' placeholder="" onChange={(e)=>
+                <input type='email' name="email" placeholder="" onChange={(e)=>
                 {
                   setid(e.target.value)
                 }} required/>
                 <br/>
                 <label>Date to Book</label>
             <br/>
-                <input type='date' placeholder="" required onChange={(e)=>
+                <input type='date' placeholder="" name="date" required onChange={(e)=>
                 {
                   setdate(e.target.value)
                 }}/>
                 <br/>
                 <label>No. Of Days</label>
             <br/>
-                <input type='number' required  value={change} onChange={(e)=>
+                <input type='number' name="days" required  value={change} onChange={(e)=>
                 {
                   setchange(e.target.value)
                 }} placeholder=""/>
@@ -74,16 +85,12 @@ console.log(book)
               var pp = change * e.price
               return(
                 <>
-                 <p>${pp}</p>
+                 <p >${pp}</p>
                 </>
               )
             })}
                 
-                <button type='submit' onClick={(e)=>
-                {
-                  alert(" sucessfully booked")
-                  Navigation("/")
-                }} >Submit</button>
+                <button type='submit' >Submit</button>
             </form>
         </div>
     </div>
