@@ -16,6 +16,79 @@ $ct:center;
 }
 
 @media screen and (max-width:676px) {
+    .footer
+    {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        background: rgb(5, 2, 13);
+      color:white;
+        box-shadow: 2px 2px 20px rgb(55, 55, 55);
+        display:flex;
+        flex-wrap: wrap;
+        .footercontaint1
+        {
+            position:relative;
+            width:30.33%;
+            margin-left:0px;
+            text-align: center;
+            
+            h1{
+                position:relative;
+                top:10px;
+                font-size: 20px;
+
+                
+            }
+            p{
+                position:relative;
+                top:10px;
+               
+            }
+        }
+        .footercontaint2
+        {
+            position:relative;
+            left:10%;
+            text-align: center;
+            h1{
+                position:relative;
+                top:10px;
+                font-size: 20px;
+                
+            }
+            p{
+                position:relative;
+                width:100% ;
+                height:40%;
+               
+                
+            }
+        }
+        .footercontaint3
+        {
+            position:relative;
+            width:33.33%;
+            left:32%;
+            text-align: center;
+            bottom: 10px;
+            
+         
+            h1{
+                position:relative;
+                top:10px;
+                font-size: 20px;
+               
+            }
+            a{
+                position:relative;
+               color:white
+             
+               
+            }
+        }
+    }
     .BookContainer
     {
         width:100%;
@@ -906,6 +979,66 @@ left:10%;
                 color:white;
                 font-size: 25px;
             }
+        }
+    }
+}
+.footer
+{
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    background:rgb(4, 1, 12);
+    box-shadow: 2px 2px 20px rgb(55, 55, 55);
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    .footercontaint1
+    {
+        position:relative;
+        width:33.33%;
+        text-align: center;
+        h1{
+            position:relative;
+            top:10px;
+            font-size: 34px;
+            
+        }
+        p{
+            position:relative;
+           top:10px;
+           
+        }
+    }
+    .footercontaint2
+    {
+        position:relative;
+        width:33.33%;
+        text-align: center;
+        h1{
+            position:relative;
+            top:10px;
+            font-size: 34px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+    .footercontaint3
+    {
+        position:relative;
+        width:33.33%;
+        text-align: center;
+        h1{
+            position:relative;
+            top:10px;
+            font-size: 34px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a{
+            position:relative;
+            color:white;
+         
+           
         }
     }
 }
