@@ -22,7 +22,7 @@ const sendemail = (e)=>
 {
 e.preventDefault()
 alert("sucsufully booked")
-Navigation("/");
+Navigation("/service");
 
 emailjs.sendForm('2818303M4', 'template_lo1seq9', e.target, '8ONo3BowBtapairW8')
 
